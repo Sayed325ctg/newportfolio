@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Abu Sayed | Royal Marriage Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --royal-dark:#0c1427;
+    --royal-blue:#111c44;
+    --royal-gold:#d4af37;
+    --light:#f8f9fb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#0c1427,#111c44);
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('formal.jpg') center/cover;
+    animation:fadeIn 2s ease-in-out;
+}
+
+header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:6px solid var(--royal-gold);
+    object-fit:cover;
+    margin-bottom:20px;
+    box-shadow:0 0 25px var(--royal-gold);
+    transition:0.5s;
+}
+
+header img:hover{
+    transform:scale(1.08);
+}
+
+header h1{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    letter-spacing:2px;
+    color:var(--royal-gold);
+}
+
+header p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:rgba(0,0,0,0.8);
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--royal-gold);
+}
+
+/* SECTIONS */
+
+section{
+    padding:70px 10%;
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    font-family:'Playfair Display', serif;
+    margin-bottom:40px;
+    color:var(--royal-gold);
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,0.3);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:0.5s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 30px var(--royal-gold);
+}
+
+/* FOOTER */
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:14px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="profile.jpg" alt="Profile Picture">
+    <h1>Mohammad Abu Sayed</h1>
+    <p>Guest Relations Officer | Dubai International Airport</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#personal">Personal</a>
+    <a href="#education">Education</a>
+    <a href="#career">Career</a>
+    <a href="#family">Family</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        I am Abu Sayed from Chattogram, Bangladesh. Currently working in Dubai International Airport as Guest Relations Officer. I value honesty, respect, and Islamic values, and seek a life partner based on mutual understanding and family values.
+    </div>
+</section>
+
+<section id="personal">
+    <h2 class="section-title">Personal Information</h2>
+    <div class="info-grid">
+        <div class="card">Date of Birth: 07 July 1999</div>
+        <div class="card">Nationality: Bangladeshi</div>
+        <div class="card">Religion: Islam</div>
+        <div class="card">Height: 5’8” | 75kg</div>
+        <div class="card">Blood Group: B+</div>
+        <div class="card">Marital Status: Unmarried</div>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="info-grid">
+        <div class="card">HSC – Anowara Govt College (2018-2019)</div>
+        <div class="card">SSC – Roypur Union High School (2015-2016)</div>
+        <div class="card">JSC – South Patenga City Corporation High School (2014)</div>
+    </div>
+</section>
+
+<section id="career">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="card">Guest Relations Officer – Dubai International Airport (2022–Present)</div>
+    <div class="card">Soldier – Bangladesh Army Medical Corps (2019–2021)</div>
+</section>
+
+<section id="family">
+    <h2 class="section-title">Family Background</h2>
+    <div class="card">
+        Father: Late Mowlana ATM Yeasin (Islamic Scholar)<br>
+        Mother: Rokeya Begum (Homemaker)<br>
+        Sisters: Nilufar Yeasmin & Tahia Akther<br>
+        Brother: Mohammad Abdul Mohit
+    </div>
+</section>
+
+<section id="gallery">
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="gallery">
+        <img src="formal.jpg">
+        <img src="casual.jpg">
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+        Email: sayed325ctg@gmail.com <br>
+        UAE: +971 56 185 2747 <br>
+        Bangladesh: +880 1875 387 142 <br>
+        Address: Al Warsan 03, Dubai
+    </div>
+</section>
+
+<footer>
+© 2026 Mohammad Abu Sayed | Royal Marriage Portfolio
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", ()=>{
+    sections.forEach(sec=>{
+        const position = sec.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100){
+            sec.style.opacity = 1;
+            sec.style.transform = "translateY(0)";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
